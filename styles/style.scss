@@ -61,7 +61,7 @@
     height: 230px;
     border-radius: 20px;
     background-color: white;
-    
+
     display: none;
     justify-content: space-around;
     align-items: center;
@@ -70,8 +70,8 @@
       justify-content: center;
       gap: 20px;
       flex-direction: column;
-      p{
-        font-weight: bold
+      p {
+        font-weight: bold;
       }
       #nombrePokemonSpan {
         text-transform: capitalize;
@@ -96,6 +96,27 @@
       .animacion {
         transform: scale(1.5);
         opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .resultado {
+    max-width: 90%;
+    height: auto;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+
+    .informacion {
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .imagenes {
+      .imagenPokemon {
+        width: 80px;
       }
     }
   }
