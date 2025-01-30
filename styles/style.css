@@ -1,0 +1,101 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/fondo-pokemon.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .tittle {
+  font-family: "Pokemon Solid", sans-serif;
+  letter-spacing: 5px;
+  font-size: 4.5rem;
+  color: yellow;
+  text-shadow: -3px -3px 0 #36569c, 3px -3px 0 #36569c, -3px 3px 0 #36569c, 3px 3px 0 #36569c, 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.container .formPokedex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  gap: 10px;
+  padding: 10px;
+}
+.container .formPokedex .inputNombre {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.container .formPokedex .btnButton {
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+.container .formPokedex .btnButton:hover {
+  background-color: white;
+  color: black;
+}
+.container .resultado {
+  width: 500px;
+  height: 230px;
+  border-radius: 20px;
+  background-color: white;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .resultado .informacion {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.container .resultado .informacion p {
+  font-weight: bold;
+}
+.container .resultado .informacion #nombrePokemonSpan {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.container .resultado .informacion #habilidadPokemonSpan {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.container .resultado .informacion #tipoPokemonSpan {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.container .resultado .imagenes {
+  display: block;
+}
+.container .resultado .imagenes .imagenPokemon {
+  width: 100px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.container .resultado .imagenes .animacion {
+  transform: scale(1.5);
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/icon-pokebola.png"
+      type="image/x-icon"
+    />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1 class="tittle">POKEDEX</h1>
+      <form class="formPokedex" id="formPokedex">
+        <input
+          type="text"
+          id="inputNombre"
+          class="inputNombre"
+          placeholder="Ingresa el nombre del pokemon"
+        />
+        <button class="btnButton">Buscar</button>
+      </form>
+      <div class="resultado" id="resultado">
+        <div class="informacion">
+          <p>Nombre: <span id="nombrePokemonSpan">...</span></p>
+          <p>Tipo: <span id="tipoPokemonSpan">...</span></p>
+          <p>Habilidad: <span id="habilidadPokemonSpan">...</span></p>
+        </div>
+        <div class="imagenes" id="imagenes">
+            <img src="" class="imagenPokemon" id="imagenPokemon">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
