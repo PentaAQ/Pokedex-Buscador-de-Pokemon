@@ -87,7 +87,16 @@
       }
     }
     .imagenes {
-      display: block;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../assets/pokebola.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
       .imagenPokemon {
         width: 100px;
         transition: all 0.5s ease-in-out;

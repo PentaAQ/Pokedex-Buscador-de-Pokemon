@@ -88,7 +88,15 @@
   font-weight: 300;
 }
 .container .resultado .imagenes {
-  display: block;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/pokebola.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .container .resultado .imagenes .imagenPokemon {
   width: 100px;
